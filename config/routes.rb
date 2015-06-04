@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     resources :recipes
   end
 
+  get '/food' => 'home#f2fcall'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
