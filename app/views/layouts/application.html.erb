@@ -7,8 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<!-- Devise alerts -->
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+<!-- end Devise alerts -->
 <%= yield %>
+
+<h1>Something here</h1>
 
 </body>
 </html>
