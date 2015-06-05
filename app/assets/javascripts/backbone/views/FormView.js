@@ -3,10 +3,11 @@ var Cookbook = Cookbook || { Models: {}, Collection: {}, Views: {} };
 Cookbook.Views.FormView = Backbone.View.extend({
   initialize: function(){
     console.log("FormView initialized");
+    this.listenTo( $("#get-started"), "click", this.render);
   },
 
   events: {
-    'click #get-started': 'addForm'
+    'click #get-started': 'render'
   },
 
   template: $("#search-form").text(),
