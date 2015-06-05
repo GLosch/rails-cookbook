@@ -1,0 +1,1 @@
+var Cookbook = Cookbook || { Models: {}, Collection: {}, Views: {} };

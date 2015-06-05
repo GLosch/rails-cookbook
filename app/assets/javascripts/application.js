@@ -15,6 +15,9 @@
 //= require turbolinks
 //= require ./libraries/underscore
 //= require ./libraries/backbone
+//= require ./backbone/models/User
+//= require ./backbone/models/Recipe
+
 //= require scratch
 
 

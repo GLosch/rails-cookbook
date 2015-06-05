@@ -11,3 +11,11 @@
 
 // });
 
+// $.ajax({
+//   type: 'GET',
+//   url: '/food',
+//   dataType: 'json'
+// }).done(function(data){
+//   var parsed = JSON.parse(data);
+//   console.log(parsed.recipes[0].f2f_url);
+// });
