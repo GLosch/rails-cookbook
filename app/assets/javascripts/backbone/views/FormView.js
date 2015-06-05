@@ -13,7 +13,7 @@ Cookbook.Views.FormView = Backbone.View.extend({
 
   el: $("#container"),
 
-  addForm: function(){
+  render: function(){
     console.log("render function hit");
     this.$el.empty();
     this.$el.append(template);

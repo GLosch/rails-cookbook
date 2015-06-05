@@ -29,8 +29,9 @@ $(function(){
       $("#container").empty();
 
       var formView = new Cookbook.Views.FormView({
-        el: $("#container")
+        el: $("#search-form")
       });
+      formView.render();
     },
 
     // profile: function(){
