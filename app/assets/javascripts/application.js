@@ -17,6 +17,10 @@
 //= require ./libraries/backbone
 //= require ./backbone/models/User
 //= require ./backbone/models/Recipe
+//= require ./backbone/views/FormView
+//= require ./backbone/views/RecipeView
+//= require ./backbone/views/RecipeCollectionView
+//= require ./backbone/app
 
 //= require scratch
 

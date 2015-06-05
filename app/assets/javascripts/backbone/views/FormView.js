@@ -5,9 +5,17 @@ Cookbook.Views.FormView = Backbone.View.extend({
     console.log("FormView initialized");
   },
 
+  events: {
+    'click #get-started': 'addForm'
+  },
+
   template: $("#search-form").text(),
 
-  render: function(){
-    
+  el: $("#container"),
+
+  addForm: function(){
+    console.log("render function hit");
+    this.$el.empty();
+    this.$el.append(template);
   }
 });
