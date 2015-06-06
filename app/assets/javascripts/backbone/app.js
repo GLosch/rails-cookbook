@@ -16,6 +16,10 @@ $(function(){
       var formView = new Cookbook.Views.FormView({
         el: $("#container")
       });
+
+      var recipeView = new Cookbook.Views.RecipeView({
+        model: Cookbook.Models.recipe
+      });
     },
 
     // routes: {

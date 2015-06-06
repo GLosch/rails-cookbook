@@ -19,6 +19,7 @@
 //= require ./backbone/models/Recipe
 //= require ./backbone/views/FormView
 //= require ./backbone/views/RecipeView
+//= require ./backbone/collections/RecipeCollection
 //= require ./backbone/views/RecipeCollectionView
 //= require ./backbone/app
 

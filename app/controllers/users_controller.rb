@@ -1,15 +1,15 @@
 class UsersController < ApplicationController
 
-  # Used to create the backbone model for the logged in User
+  # Homepage route -> views/users/index.html.erb
   def index
-    session_user = User.find(current_user.id).to_json(:include => :recipes)
-    # render json: session_user
-    # render session_user
 
   end
 
+  # Makes the Cookbook.currentUser attribute available to Backbone, with the recipes that belong to the currently-logged-in user
   def show
-
+    session_user = User.find(current_user.id).to_json(:include => :recipes)
+    render json: session_user
+    # render session_user
   end
 
 
