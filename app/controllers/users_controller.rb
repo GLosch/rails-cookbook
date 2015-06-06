@@ -2,8 +2,14 @@ class UsersController < ApplicationController
 
   # Used to create the backbone model for the logged in User
   def index
-    session_user = User.find(current_user.id).to_json
+    session_user = User.find(current_user.id).to_json(:include => :recipes)
     # render json: session_user
+    # render session_user
+
+  end
+
+  def show
+
   end
 
 

@@ -6,7 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+Recipe.delete_all
+
 Recipe.create({
+  user_id: 1,
   f2f_url: "http://food2fork.com/view/46906",
   title: "Roast Chicken",
   recipe_id: "46906",
@@ -15,6 +18,7 @@ Recipe.create({
 })
 
 Recipe.create({
+  user_id: 1,
   f2f_url: "http://food2fork.com/view/47264",
   title: "Ranch Style Chicken",
   recipe_id: "47264",
@@ -23,6 +27,7 @@ Recipe.create({
 })
 
 Recipe.create({
+  user_id: 1,
   f2f_url: "http://food2fork.com/view/39635",
   title: "Slow-Cooker Chicken Tikka Masala",
   recipe_id: "39635",
@@ -31,6 +36,7 @@ Recipe.create({
 })
 
 Recipe.create({
+  user_id: 1,
   f2f_url: "http://food2fork.com/view/47118",
   title: "Grilled Chicken with Lemon Basil Pasta",
   recipe_id: "47118",
@@ -39,6 +45,7 @@ Recipe.create({
 })
 
 Recipe.create({
+  user_id: 1,
   f2f_url: "http://food2fork.com/view/54290",
   title: "Lemon Chicken Orzo Soup",
   recipe_id: "54290",
@@ -47,6 +54,7 @@ Recipe.create({
 })
 
 Recipe.create({
+  user_id: 1,
   f2f_url: "http://food2fork.com/view/49390",
   title: "Parmesan Chicken with Caesar Roasted Romaine",
   recipe_id: "49390",
@@ -55,6 +63,7 @@ Recipe.create({
 })
 
 Recipe.create({
+  user_id: 1,
   f2f_url: "http://food2fork.com/view/35581",
   title: "Slow Cooker Bacon Wrapped Apple BBQ Chicken",
   recipe_id: "35581",
@@ -63,6 +72,7 @@ Recipe.create({
 })
 
 Recipe.create({
+  user_id: 1,
   f2f_url: "http://food2fork.com/view/47302",
   title: "Crispy Yogurt Chicken",
   recipe_id: "47302",
@@ -71,6 +81,7 @@ Recipe.create({
 })
 
 Recipe.create({
+  user_id: 1,
   f2f_url: "http://food2fork.com/view/a8bb2b",
   title: "Foolproof slow roast chicken",
   recipe_id: "a8bb2b",
@@ -79,6 +90,7 @@ Recipe.create({
 })
 
 Recipe.create({
+  user_id: 1,
   f2f_url: "http://food2fork.com/view/0b1b8f",
   title: "Emeril's Beef Stew",
   recipe_id: "0b1b8f",
@@ -87,6 +99,7 @@ Recipe.create({
 })
 
 Recipe.create({
+  user_id: 1,
   f2f_url: "http://food2fork.com/view/e0b88e",
   title: "Rosemary Beef with Root Vegetables",
   recipe_id: "e0b88e",
@@ -95,6 +108,7 @@ Recipe.create({
 })
 
 Recipe.create({
+  user_id: 1,
   f2f_url: "http://food2fork.com/view/15f567",
   title: "Leg of lamb cooked with potatoes",
   recipe_id: "15f567",
@@ -103,6 +117,7 @@ Recipe.create({
 })
 
 Recipe.create({
+  user_id: 1,
   f2f_url: "http://food2fork.com/view/47937",
   title: "Porcini Mushroom Soup",
   recipe_id: "47937",
@@ -111,6 +126,7 @@ Recipe.create({
 })
 
 Recipe.create({
+  user_id: 1,
   f2f_url: "http://food2fork.com/view/39101",
   title: "Beef and Beer With Yellow Potatoes",
   recipe_id: "39101",
@@ -119,6 +135,7 @@ Recipe.create({
 })
 
 Recipe.create({
+  user_id: 1,
   f2f_url: "http://food2fork.com/view/48141",
   title: "Buttermilk Summer Squash Soup",
   recipe_id: "48141",

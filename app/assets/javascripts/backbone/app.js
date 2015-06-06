@@ -1,6 +1,6 @@
 var Cookbook = Cookbook || { Models: {}, Collection: {}, Views: {} };
 
-// var eventCollection;
+// var recipeCollection;
 
 Cookbook.initialize = function(){
   
@@ -10,53 +10,52 @@ $(function(){
   var Router = Backbone.Router.extend({
 
     initialize: function(){
-      $('#container').empty();
+      // $('#container').empty();
       Cookbook.initialize();
-    },
-
-    routes: {
-      '': 'index',
-      'search': 'search',
-      'recipes': 'recipes'
-    },
-
-    index: function(){
-
-    },
-
-    search: function(){
-      console.log("hit search route");
-      $("#container").empty();
 
       var formView = new Cookbook.Views.FormView({
-        el: $("#search-form")
+        el: $("#container")
       });
-      formView.render();
     },
 
-    // profile: function(){
-    //   console.log('in profile route');
-    //   $("#main-content").empty();
+    // routes: {
+    //   '': 'index',
+    //   'search': 'search',
+    //   'recipes': 'recipes'
+    // },
 
-    //   var userEditView = new Impromp2App.Views.UserEditView({
-    //     model: Impromp2App.currentUser,
-    //     el: $('#main-content')
-    //   });
-    //   userEditView.render();
+    // index: function(){
+
+    // },
+
+    // search: function(){
+    //   console.log("hit search route");
+    //   $("#container").empty();
+
+      
+    // },
+
+    // recipes: function(){
+
     // }
-
-    recipes: function(){
-
-    }
 
   });
 
   Cookbook.currentUser = new Cookbook.Models.User();
-  var promise = Cookbook.currentUser.fetch();
+  // var promise = 
+  Cookbook.currentUser.fetch();
   
-  promise.done(function(){
+  // promise.done(function(){
     var myRouter = new Router();
     Backbone.history.start();
-  });
+  // });
+
+  // Impromp2App.currentUser = new Impromp2App.Models.User();
+  // var promise = Impromp2App.currentUser.fetch();
+  
+  // promise.done(function(){
+  //   var myRouter = new Router();
+  //   Backbone.history.start();
+  // });
 
 });

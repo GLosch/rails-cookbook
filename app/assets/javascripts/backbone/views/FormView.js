@@ -10,13 +10,13 @@ Cookbook.Views.FormView = Backbone.View.extend({
     'click #get-started': 'render'
   },
 
-  template: $("#search-form").text(),
-
   el: $("#container"),
 
   render: function(){
     console.log("render function hit");
-    this.$el.empty();
-    this.$el.append(template);
+    $("#welcome-box").addClass("animated bounceOutLeft");
+    var template = $("#search-form").text();
+    setTimeout(function(){ $("#container").empty().append(template); }, 350);
   }
+
 });

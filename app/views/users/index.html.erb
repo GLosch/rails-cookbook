@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href='http://fonts.googleapis.com/css?family=Buda:300' rel='stylesheet' type='text/css'>
+  <title>CookBook</title>
+
+  <!-- Begin Templates -->
+
+  <!-- Search Form -->
+  <script type="text/template" id="search-form">
+    <form role="form" id="search" class="animated bounceInRight">
+      <h2>What do you have in your fridge?</h2>
+      <div class="form-group">
+        <input type="text" class="form-control" id="ing1">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="ing2">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="ing3">
+      </div>
+      <button type="submit" id="ing-search" class="btn btn-default">Submit</button>
+      <p>Or...</p>
+      <button type="submit" id="random-search" class="btn btn-default">Surprise Me!</button>
+    </form>
+  </script>
+  <!-- End search form -->
+
+  <!-- End templates -->
+</head>
+<body>
+  <%= render "menu" %>
+  <div id="container">
+    <div id="welcome-box">
+      <h1 class="header animated bounceInDown">Hey, there!</h1>
+      <h2 class="header animated bounceInDown">You look hungry</h2>
+      <h2 class="header animated bounceInDown">Let's find you something to eat</h2>
+      <button id="get-started" class="animated bounceInLeft btn btn-primary">Get Started</button>
+    </div>
+  </div>
+</body>
+</html>
