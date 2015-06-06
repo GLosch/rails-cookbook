@@ -24,9 +24,21 @@ Cookbook.Views.FormView = Backbone.View.extend({
   },
 
   search: function(){
-    console.log("search function hit");
-    $("button #ing-search").on("click", function(e){
-      e.preventDefault();
+    // stops the form from refreshing the page
+    event.preventDefault();
+    var firstIng = $("#ing1").val();
+    var secondIng = $("#ing2").val();
+    var thirdIng = $("#ing3").val();
+    console.log(firstIng + " " + secondIng + " " + thirdIng);
+    $.ajax({
+      url: '/food',
+      type: 'GET',
+      dataType: 'json',
+      // sends the search terms to the rails home#f2fcall method, which triggers the ajax call to the food2fork api
+      data: {'search': firstIng + "," + secondIng + "," + thirdIng}
+    }).done(function(data){
+      var parsed = JSON.parse(data);
+      console.log(parsed);
     });
   },
 

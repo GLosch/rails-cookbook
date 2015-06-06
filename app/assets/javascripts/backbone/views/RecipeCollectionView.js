@@ -1,11 +1,11 @@
-var Cookbook = Cookbook || { Models: {}, Collection: {}, Views: {} };
+// var Cookbook = Cookbook || { Models: {}, Collection: {}, Views: {} };
 
-Cookbook.Collections.RecipeCollection = Backbone.Collection.extend({
-  initialize: function(options){
+// Cookbook.Collections.RecipeCollection = Backbone.Collection.extend({
+//   initialize: function(options){
   
-  },
-  model: Cookbook.Models.Recipe,
-  url: function(){
-   return 'food';
-  }
-});
+//   },
+//   model: Cookbook.Models.Recipe,
+//   url: function(){
+//    return 'food';
+//   }
+// });

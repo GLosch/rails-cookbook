@@ -7,7 +7,7 @@
 
   <!-- Begin Templates -->
 
-  <!-- Search Form -->
+  <!-- Begin Search Form -->
   <script type="text/template" id="search-form">
     <form role="form" id="search" class="animated bounceInRight">
       <h2>What do you have in your fridge/pantry?</h2>
@@ -27,8 +27,20 @@
   </script>
   <!-- End search form -->
 
-  <!-- Recipe cards -->
-  
+  <!-- Begin Recipe cards -->
+  <script type="text/template" id="search-results">
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="{{image_url}}" alt="recipe image">
+          <div class="caption">
+            <h3>{{title}}</h3>
+            <p><a href="{{f2f_url}} target='_blank'" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </script>
   <!-- End Recipe cards -->
 
   <!-- End templates -->
