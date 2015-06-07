@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require ./libraries/underscore
 //= require ./libraries/backbone
+//= require ./libraries/button
 //= require ./backbone/models/User
 //= require ./backbone/models/Recipe
 //= require ./backbone/views/FormView
