@@ -30,6 +30,7 @@
   <!-- Begin Recipe cards -->
   <script type="text/template" id="search-results">
     <div class="row">
+    {{#recipeCard}}
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
           <img src="{{image_url}}" alt="recipe image">
@@ -39,6 +40,7 @@
           </div>
         </div>
       </div>
+    {{/recipeCard}}
     </div>
   </script>
   <!-- End Recipe cards -->

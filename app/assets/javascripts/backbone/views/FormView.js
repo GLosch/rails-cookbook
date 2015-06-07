@@ -38,7 +38,10 @@ Cookbook.Views.FormView = Backbone.View.extend({
       data: {'search': firstIng + "," + secondIng + "," + thirdIng}
     }).done(function(data){
       var parsed = JSON.parse(data);
-      console.log(parsed);
+      console.log(parsed.recipes);
+      // _.each(parsed, function(e){
+      //   var 
+      // })
     });
   },
 

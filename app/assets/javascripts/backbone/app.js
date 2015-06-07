@@ -3,7 +3,13 @@ var Cookbook = Cookbook || { Models: {}, Collection: {}, Views: {} };
 // var recipeCollection;
 
 Cookbook.initialize = function(){
-  
+  var formView = new Cookbook.Views.FormView({
+    el: $("#container")
+  });
+
+  var recipeView = new Cookbook.Views.RecipeView({
+    model: Cookbook.Models.recipe
+  });
 };
 
 $(function(){
@@ -12,14 +18,6 @@ $(function(){
     initialize: function(){
       // $('#container').empty();
       Cookbook.initialize();
-
-      var formView = new Cookbook.Views.FormView({
-        el: $("#container")
-      });
-
-      var recipeView = new Cookbook.Views.RecipeView({
-        model: Cookbook.Models.recipe
-      });
     },
 
     // routes: {
