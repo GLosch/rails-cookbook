@@ -3,7 +3,7 @@ var Cookbook = Cookbook || { Models: {}, Collection: {}, Views: {} };
 Cookbook.Views.RecipeView = Backbone.View.extend({
   initialize: function(){
     console.log("recipe view initialized");
-    debugger;
+    // debugger;
     this.listenTo(Cookbook.Views.FormView, "change", this.render);
   },
 
