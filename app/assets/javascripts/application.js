@@ -13,6 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require ./libraries/bootstrap.min
+//= require ./libraries/collapse
 //= require ./libraries/button
 //= require ./libraries/mustache
 //= require ./libraries/underscore
