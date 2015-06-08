@@ -8,7 +8,8 @@ Cookbook.initialize = function(){
   });
 
   var recipeView = new Cookbook.Views.RecipeView({
-    model: Cookbook.Models.recipe
+    model: Cookbook.Models.recipe,
+    el: $("#container")
   });
 };
 
