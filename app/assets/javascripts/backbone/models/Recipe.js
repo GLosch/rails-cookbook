@@ -7,7 +7,7 @@ Cookbook.Models.Recipe = Backbone.Model.extend({
 
   el: $("#search-results").text(),
 
-  rootUrl: "/recipe"
+  urlRoot: "api/recipes"
 
 
 });

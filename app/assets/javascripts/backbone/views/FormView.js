@@ -53,10 +53,10 @@ Cookbook.Views.FormView = Backbone.View.extend({
             recipe_id: recipe.recipe_id,
             image_url: recipe.image_url,
             social_rank: recipe.social_rank,
+            user_id: Cookbook.currentUser.id
           });
-          var newRecipeView = new Cookbook.Views.RecipeView({model: newRecipeModel});
+          var newRecipeView = new Cookbook.Views.RecipeView({model: newRecipeModel, el: $("#container")});
           newRecipeView.render();
-          // newRecipeView.save();
         });
       }
     });
