@@ -62,4 +62,18 @@ h2 {
 
 .thumbnail {
   text-align: center;
+  height: 700px;
+  width: 375px;
+}
+
+.recipe-card {
+  display: inline-block;
+}
+
+.thumbnail-image {
+  background-size: cover;
+  height: 500px;
+  width: 350px;
+  margin: 0 auto;
+  border-radius: 5px;
 }

@@ -3,18 +3,23 @@ var Cookbook = Cookbook || { Models: {}, Collection: {}, Views: {} };
 Cookbook.Views.RecipeView = Backbone.View.extend({
   initialize: function(){
     console.log("recipe view initialized");
-    // debugger;
-    this.listenTo(Cookbook.Views.FormView, "change", this.render);
+  },
+
+  events: {
+    "click button[data-target='saveRecipeButton']": 'saveModel'
+  },
+
+  saveModel: function(){
+    console.log("RecipeView saveModel function triggered!");
+    this.model.save();
   },
 
   template: $("#search-results").text(),
 
   render: function(){
     console.log("RecipeView render triggered");
-    var self = this;
-    var recipeValues = {image_url: "url", title: "title", f2f_url: "f2f_url"};
-    var recipeCard = Mustache.render(self.template, {recipeCard: recipeValues});
-    $("#container").empty();
+    var template = $("#search-results").text();
+    var recipeCard = Mustache.render(template, {recipeCardBlock: this.model.attributes});
     $("#container").append(recipeCard);
   }
 
