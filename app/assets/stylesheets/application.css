@@ -38,6 +38,17 @@ form.new_user {
   margin-top: 10%;
 }
 
+#devise-links {
+  max-width: 175px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#devise-links a {
+  color: #ecf0f1;
+  text-align: center;
+}
+
 h1 {
   margin-top: 4%;
   text-align: center;

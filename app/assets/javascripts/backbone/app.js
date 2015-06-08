@@ -7,10 +7,10 @@ Cookbook.initialize = function(){
     el: $("#container")
   });
 
-  var recipeView = new Cookbook.Views.RecipeView({
-    model: Cookbook.Models.recipe,
-    el: $("#container")
-  });
+  // var recipeView = new Cookbook.Views.RecipeView({
+  //   model: Cookbook.Models.recipe,
+  //   el: $("#container")
+  // });
 };
 
 $(function(){
