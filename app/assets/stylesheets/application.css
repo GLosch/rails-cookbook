@@ -88,3 +88,9 @@ h2 {
   margin: 0 auto;
   border-radius: 5px;
 }
+
+.jumbotron {
+  top: 10%;
+  color: #000;
+  text-align: center;
+}

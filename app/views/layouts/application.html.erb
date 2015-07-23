@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cookbook</title>
+  <title>Dinner Plan</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<% if !current_user %>
+  <div class="jumbotron">
+    <h1>Dinner Plan</h1>
+    <p>What you're making tonight</p>
+  </div>
+  <% end %>
 <!-- Devise alerts -->
 <% if notice %>
 
 <% end %>
-<% if alert %>
+<!-- <% if alert %>
   <p class="alert alert-danger"><%= alert %></p>
-<% end %>
+<% end %> -->
 <!-- <div class="animated zoomIn"> -->
 <!-- end Devise alerts -->
 <%= yield %>
